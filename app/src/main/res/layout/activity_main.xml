@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/logo_2"
+            android:src="@drawable/logo_1"
             android:scaleType="centerCrop"
             />
 
@@ -36,12 +36,23 @@
         android:textColor="#FFFFFF"
         android:text="아이디"/>
 
-    <EditText
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="loginID2918"
-        android:textColor="#FFFFFF"
-        android:inputType="textEmailAddress"/>
+        android:layout_height="wrap_content">
+        //먼저 작성하는 순서대로 밑에서부터 깔림
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="loginID2918"
+            android:textColor="#FFFFFF"
+            android:inputType="textEmailAddress"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:src="@drawable/x"/>
+    </FrameLayout>
 
     <EditText
         android:layout_width="match_parent"
@@ -54,13 +65,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
-            android:text="@"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_launcher"/>
 
         <TextView
             android:layout_width="wrap_content"
