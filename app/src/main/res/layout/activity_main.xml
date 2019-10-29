@@ -6,17 +6,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#088ab7"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center" >
+        android:layout_marginTop="100dp"
+        android:gravity="bottom|center" >
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/logo_1"
+            android:src="@drawable/logo_2"
             android:scaleType="centerCrop"
             />
 
@@ -33,12 +36,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="18sp"
         android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
         android:text="아이디"/>
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
         //먼저 작성하는 순서대로 밑에서부터 깔림
         <EditText
             android:layout_width="match_parent"
@@ -48,8 +54,8 @@
             android:inputType="textEmailAddress"/>
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="right"
             android:src="@drawable/x"/>
     </FrameLayout>
@@ -60,13 +66,15 @@
         android:hint="비밀번호"
         android:textSize="24sp"
         android:textColorHint="#FFFFFF"
+        android:layout_marginTop="30dp"
         android:inputType="textPassword" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
         <ImageView
             android:layout_width="30dp"
@@ -77,6 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
+            android:layout_marginLeft="5dp"
             android:text="비밀번호 찾기"/>
 
     </LinearLayout>
@@ -84,15 +93,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="회원가입" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="로그인" />
 
